@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design System | O Italiano</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/core.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <header class="site-header is-scrolled" data-site-header>
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="O Italiano - Home"><img class="brand-logo" src="assets/images/logo_oitaliano_transp.png" alt="O Italiano Consultoria Imobiliaria e Financeira" /></a>
+      <nav class="nav-links" data-nav-links aria-label="Navegação principal">
+        <a href="index.html">Home</a><a href="sobre/index.html">Sobre</a><a href="consultoria/index.html">Consultoria</a><a href="destaques/index.html">Destaques</a><a href="blog/index.html">Blog</a><a href="contato/index.html">Contato</a>
+      </nav>
+      <div class="nav-actions"><a class="btn btn-primary" href="https://wa.me/5511992938108" data-whatsapp-link>Agende uma conversa</a><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="section section-dark" style="padding-top: 150px;">
+      <div class="container">
+        <span class="eyebrow">Design System</span>
+        <h1 class="section-title">Tokens e componentes da identidade O Italiano.</h1>
+        <p class="section-lead">A arquitetura original foi preservada em containers amplos, tipografia display/body, dividers finos, estados acessíveis, movimento sutil e fotografia editorial. Os tokens de marca foram adaptados para preto, grafite, marfim e dourado controlado.</p>
+      </div>
+    </section>
+    <section class="section section-surface">
+      <div class="container">
+        <span class="eyebrow">Cores</span>
+        <div class="grid-three">
+          <article class="value-panel"><span class="number">#0B0B0A</span><h3>Preto</h3><p>Base dominante, fundos e contraste principal.</p></article>
+          <article class="value-panel"><span class="number">#F4F0E7</span><h3>Marfim</h3><p>Leitura em fundos claros e respiro editorial.</p></article>
+          <article class="value-panel"><span class="number">#C5A35A</span><h3>Dourado</h3><p>CTAs, linhas, números e pequenos destaques.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-ivory">
+      <div class="container">
+        <span class="eyebrow">Componentes</span>
+        <h2 class="section-title">Botões, grids e formulários sem excesso ornamental.</h2>
+        <div class="section-actions"><button class="btn btn-primary" type="button">Primário</button><button class="btn btn-secondary" type="button">Secundário</button><a class="text-link" href="consultoria/index.html">Link editorial</a></div>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container contact-grid">
+        <div><span class="eyebrow">Formulário</span><h2 class="section-title">Estados reais de foco, erro e sucesso.</h2></div>
+        <form class="contact-form" data-contact-form novalidate>
+          <div class="field"><label for="ds-nome">Nome</label><input id="ds-nome" name="nome" required aria-describedby="erro-ds-nome" /><span id="erro-ds-nome" class="field-error" data-error-for="ds-nome"></span></div>
+          <div class="field"><label for="ds-telefone">Telefone</label><input id="ds-telefone" name="telefone" type="tel" required aria-describedby="erro-ds-telefone" /><span id="erro-ds-telefone" class="field-error" data-error-for="ds-telefone"></span></div>
+          <div class="field"><label for="ds-email">E-mail</label><input id="ds-email" name="email" type="email" required aria-describedby="erro-ds-email" /><span id="erro-ds-email" class="field-error" data-error-for="ds-email"></span></div>
+          <div class="field"><label for="ds-assunto">Assunto</label><select id="ds-assunto" name="assunto" required aria-describedby="erro-ds-assunto"><option value="">Selecione</option><option>Consultoria</option></select><span id="erro-ds-assunto" class="field-error" data-error-for="ds-assunto"></span></div>
+          <div class="field"><label for="ds-mensagem">Mensagem</label><textarea id="ds-mensagem" name="mensagem" required aria-describedby="erro-ds-mensagem"></textarea><span id="erro-ds-mensagem" class="field-error" data-error-for="ds-mensagem"></span></div>
+          <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button><div class="form-status" role="status" aria-live="polite" data-form-status></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
+

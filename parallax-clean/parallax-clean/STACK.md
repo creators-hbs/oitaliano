@@ -1,0 +1,6 @@
+- **HTML estático multipáginas** — rotas por diretórios (`/sobre/`, `/consultoria/`, `/destaques/`, `/blog/`, `/contato/`) para funcionar em hospedagem estática comum.
+- **CSS customizado** — tokens de marca, containers, grids editoriais, botões, formulários, responsividade, focus states e `prefers-reduced-motion` concentrados em `assets/css/core.css`.
+- **Google Fonts** — Cormorant Garamond para títulos editoriais e Manrope para interface/texto.
+- **JavaScript leve** — `assets/js/site.js` controla header ao rolar, menu mobile, links de WhatsApp, formulário acessível, ano dinâmico, busca do blog e animações de reveal via IntersectionObserver.
+- **Assets locais** — imagens em `assets/images/`, incluindo hero gerado por IA e fotografias arquitetônicas reaproveitadas do projeto.
+- **SEO técnico** — metadados por página, canonical, Open Graph, Twitter cards, `robots.txt`, `sitemap.xml`, favicon SVG e schema estruturado quando semanticamente aplicável.
