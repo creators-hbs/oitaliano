@@ -4,6 +4,7 @@
   "private": true,
   "description": "Site estatico da O Italiano Consultoria Imobiliaria e Financeira.",
   "scripts": {
+    "dev": "node tools/dev-server.js",
     "build": "node tools/build-static.js",
     "validate": "node tools/validate-site.js .",
     "validate:dist": "node tools/validate-site.js dist"
